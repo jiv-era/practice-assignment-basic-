@@ -1,9 +1,10 @@
 import React from 'react';
+import './UserOutput.css'
 
 const userOutput = (props) => {
     return( 
-        <div>
-            <p>{props.userName}</p>
+        <div className="UserOutput">
+            <p>Username: {props.userName}</p>
             <p>SUUUUUH DUDE</p>
         </div>
     )

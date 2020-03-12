@@ -6,7 +6,7 @@ import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
   state = {
-    username: ''
+    username: 'yerrrudan'
   };
 
   usernameChangeHandler = (e) => {
@@ -32,7 +32,7 @@ class App extends Component {
         </ol>
 
 
-      <UserInput changeUser={this.usernameChangeHandler}/>
+      <UserInput changeUser={this.usernameChangeHandler} currentName={this.state.username}/>
       <UserOutput userName={this.state.username} />
       <UserOutput userName={this.state.username}/>
       <UserOutput userName={this.state.username}/>
